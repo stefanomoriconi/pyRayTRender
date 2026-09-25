@@ -1,0 +1,5 @@
+numpy
+matplotlib
+pillow
+stl_reader
+pytest

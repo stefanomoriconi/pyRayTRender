@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.png
+*.gif
+!docs/images/*.png
+examples/output/
+render_output/
+*.egg-info/
+build/
+dist/

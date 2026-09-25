@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyraytrender"
+version = "0.1.0"
+description = "A simple, fully Python-native (NumPy-vectorised) ray-tracing rendering engine for triangular meshes"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "CC-BY-NC-4.0" }
+authors = [{ name = "Stefano Moriconi" }]
+keywords = [
+  "ray-tracing",
+  "rendering-engine",
+  "computer-graphics",
+  "numpy",
+  "blinn-phong",
+  "3d-rendering",
+  "triangle-mesh",
+  "python",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Education",
+  "Topic :: Multimedia :: Graphics :: 3D Rendering",
+  "Topic :: Scientific/Engineering :: Visualization",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "numpy",
+  "matplotlib",
+  "pillow",
+  "stl_reader",
+]
+
+[project.urls]
+Homepage = "https://github.com/stefanomoriconi/pyRayTRender"
+Repository = "https://github.com/stefanomoriconi/pyRayTRender"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["pyraytrender"]
