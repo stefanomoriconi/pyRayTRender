@@ -105,7 +105,12 @@ class Renderer():
         imgCanvas = imgCanvas.reshape(
             [np.ceil(float(self.Camera.height)/self.dwnSmpl).astype(np.int64), 
              np.ceil(float(self.Camera.width)/self.dwnSmpl).astype(np.int64), 3])
-                      
+
+        # Camera rays are sampled bottom-to-top along the image-screen height
+        # (row 0 = bottom of the screen), so flip vertically to match the
+        # conventional top-to-bottom row order expected by imshow/PIL.
+        imgCanvas = np.flipud(imgCanvas)
+
         t1_raytraceCamView = time.time()
                      
         ## Report Computational Time <DEBUG>
