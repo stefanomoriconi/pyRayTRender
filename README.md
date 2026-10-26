@@ -21,8 +21,9 @@ so it runs unmodified on any CPU-based machine (Linux, macOS, Windows).
 *Both figures are generated end-to-end by the real renderer — see
 [`docs/generate_figures.py`](docs/generate_figures.py).*
 
-Example Rendering
-![Placeholder Bunny and Spheres rendered with shadows, mirror, and reflections](docs/images/bunny_reflections.png)
+**Example Rendering**
+
+![Placeholder Bunny and Spheres rendered with shadows, mirror, and reflections](docs/images/Rendering_Study.gif)
 
 ---
 
